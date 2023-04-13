@@ -1,0 +1,408 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* .startPoint{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  z-index: 899998989;
+  background: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+} */
+
+
+
+/* 헤더 영역 */
+
+#header {
+  position: fixed;
+  top: 26px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 800;
+
+}
+
+#logo {
+  margin-left: 185px;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav > ul > li+li {
+  margin-left: 62px;
+}
+
+nav > ul {
+  display: flex;
+}
+nav ul li a {
+  color: #c1c5d3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.01;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+
+#header nav ul li.active a {
+  color: #fff;
+}
+#header nav ul li.active .nav_line {
+  width: 80%;
+}
+
+#header nav ul li .nav_line {
+  display: block;
+  height: 2px;
+  width: 0;
+  background: red;
+  margin-top: 8px;
+  transition: 0.6s;
+}
+#header nav ul li:hover .nav_line {
+  width: 80%;
+}
+
+#header .ticket {
+  margin-right: 189px;
+  cursor: pointer;
+}
+
+
+.header_bg {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0;
+  width: 100vw;
+  height: 177px;
+  background: url(../image/intro_GNB/menu_dim_multiply.png) center;
+  background-size: cover;
+  z-index: 750;
+  mix-blend-mode: multiply;
+}
+
+
+
+/* 로딩 애니메이션 */
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+}
+
+.loading.off {
+  display: none;
+}
+
+
+.loading_spider {
+  position: absolute;
+  left: 50%;
+  top: -45px;
+  transform: translate(-50%,0);
+  transition: 3s;
+  z-index: 999;
+}
+
+.loading_spider.on {
+  transform: translate(-50%,1100px);
+}
+.loading_spider.off {
+  display: none;
+}
+
+.loading_line {
+  position: absolute;
+  left: 50%;
+  top: -1110px;
+  transform: translate(-50%,0);
+  display: block;
+  height: 1100px;
+  width: 2px;
+  background: #fff;
+  transition: 3s;
+  z-index: 999;
+}
+.loading_line.on {
+  transform: translate(-50%,1100px);
+}
+.loading_line.off {
+  display: none;
+}
+
+.fade_left {
+  background: #000;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1.5s;
+  z-index: 990;
+}
+.fade_right {
+  background: #000;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 1.5s;
+  z-index: 990;
+}
+.fade_left.on {
+  width: 0;
+}
+.fade_right.on {
+  width: 0;
+}
+
+.dim_logo {
+  transition: 0.5s;
+  opacity: 1;
+}
+.dim_logo img  {
+  width: 100%;
+}
+
+.dim_logo.on  {
+  opacity: 0;
+}
+
+
+/* 스크롤 가이드 */
+
+.scrollGuide_frame {
+  width: 100vw;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+
+  transition: 0.5s;
+}
+
+.scrollGuide_frame.on {
+  opacity: 0;
+}
+
+.scrollBG {
+  position: absolute;
+
+  left: 0;
+  bottom: 0; 
+  mix-blend-mode: multiply;
+  
+}
+
+.scroll_txt {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+}
+
+.scroll_mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 63px;
+  animation: move 1s ease alternate infinite;
+}
+
+
+
+
+
+
+/* 메인 비주얼 영역 */
+
+#section01{
+  height: 12000px;
+}
+.trigger-this-1 {
+  height: 12000px;
+}
+.fix-this-1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#section01 .bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0; 
+  pointer-events: none;
+}
+
+#section01 .bg_city {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0; 
+  z-index: 100;
+  background: url('../image/obj_bg2.jpg');
+  background-size: cover;
+}
+#section01 .bg_city.on {
+  opacity: 0;
+}
+
+#section01 .bg_spiderman {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0; 
+  z-index: 400;
+}
+
+#section01 .bg_spiderman img {
+  width: 100%;
+}
+
+
+
+#section01 .bg_metalarm {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0; 
+  z-index: 600;
+}
+
+#section01 .bg_metalarm img {
+  width: 100%;
+}
+
+#section01 .bg_metalarm.on {
+  opacity: 0;
+}
+
+
+
+
+#section01 .trailer_mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0; 
+  top: 0; 
+  z-index: 99;
+  background: url('../image/Trailer_Mask.svg');
+  background-size: cover;
+}
+
+#section01 .trailer_video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+}
+#section01 .trailer_video video {
+  width: 100vw;
+}
+
+
+/* 어바웃 탭 이동 버튼 */
+
+.toAbout_btn {
+  position: fixed;
+  left: 50%;
+  top: 91.5%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  display: none;
+  transition: 0.5s;
+}
+
+.toAbout_btn.on {
+  display: block;
+
+}
+
+
+.toAbout_btn li {
+  position: relative;
+  width: 229px;
+  height: 87px;
+  cursor: pointer;
+
+}
+.toAbout_btn .btn_to_about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.btn_to_about .btn_after {
+  opacity: 0;
+}
+
+.toAbout_btn li:hover .btn_after{
+  opacity: 1;
+}
+
+.toAbout_btn li:hover .btn_before{
+  opacity: 0;
+}
+
+
+
+
+
+
+/* #section02{
+  background: dodgerblue;
+} */
+
+
+
+
+
+
+
+
+
+@keyframes move {
+  0% {
+    transform: translate(-50%,0);
+  }
+  100% {
+    transform: translate(-50%,-25px);
+  }
+}

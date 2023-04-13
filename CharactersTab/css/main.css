@@ -1,0 +1,1241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@500&display=swap');
+
+/* 헤더 영역 */
+
+#header {
+    position: fixed;
+    top: 26px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 990;
+  
+  }
+  
+  #logo {
+    margin-left: 185px;
+  }
+  
+  #header nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #header nav > ul > li+li {
+    margin-left: 62px;
+  }
+  
+  #header nav > ul {
+    display: flex;
+  }
+  #header nav ul li a {
+    color: #c1c5d3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    letter-spacing: 0.01;
+  }
+  #header nav ul li a:hover {
+    color: #fff;
+  }
+  
+  #header nav ul li.active a {
+    color: #fff;
+  }
+  #header nav ul li.active .nav_line {
+    width: 80%;
+  }
+  
+  #header nav ul li .nav_line {
+    display: block;
+    height: 2px;
+    width: 0;
+    background: red;
+    margin-top: 8px;
+    transition: 0.6s;
+  }
+  #header nav ul li:hover .nav_line {
+    width: 80%;
+  }
+  
+  #header .ticket {
+    margin-right: 189px;
+    cursor: pointer;
+  }
+  
+  
+  .header_bg {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    width: 100vw;
+    height: 177px;
+    background: url(../image/GNB/menu_dim_multiply.png) center;
+    background-size: cover;
+    z-index: 900;
+    mix-blend-mode: multiply;
+  }
+
+
+
+
+
+#section01 {
+  background: url(../image/character_bg.jpg) center;
+  background-size: cover;
+  width: 3980px;
+}
+
+#section01 .hoverEffects {
+  pointer-events: none;
+}
+
+
+/* drStrange */
+#section01 .drStrange_frame {
+  position: absolute;
+  left: 320px;
+  top:233px;
+}
+
+#section01 .hover1 {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+.drStrange {
+  position: relative;
+  width: 278px;
+  height: 381px;
+  cursor: pointer;
+
+}
+.drStrange img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.drStrange_frame .drStrange_glow {
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+
+.drStrange_frame:hover .drStrange_glow{
+  opacity: 1;
+}
+
+
+
+
+/* greenGoblin */
+.greenGoblin_frame {
+  position: absolute;
+  left: 998px;
+  top: 157px;
+
+}
+
+#section01 .hover2 {
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+
+.greenGoblin {
+  position: relative;
+  width: 158px;
+  height: 171px;
+  cursor: pointer;
+
+}
+.greenGoblin img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.greenGoblin_frame .greenGoblin_glow {
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+
+.greenGoblin_frame:hover .greenGoblin_glow{
+  opacity: 1;
+}
+
+
+/* spiderman */
+.spiderman_frame {
+  position: absolute;
+  left: 939px;
+  top: 518px;
+}
+
+
+#section01 .hover3 {
+  position: absolute;
+  top: 80px;
+  left: 104px;
+}
+
+
+.spiderman {
+  position: relative;
+  width: 240px;
+  height: 633px;
+  cursor: pointer;
+
+}
+.spiderman img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.spiderman .spiderman_glow {
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+
+.spiderman:hover .spiderman_glow{
+  opacity: 1;
+}
+
+
+
+/* drOctopus */
+.drOctopus_frame {
+  position: absolute;
+  left: 1963px;
+  top: 582px;
+}
+
+#section01 .hover4 {
+  position: absolute;
+  top: 12px;
+  left: 295px;
+}
+
+.drOctopus {
+  position: relative;
+  width: 409px;
+  height: 543px;
+  cursor: pointer;
+
+}
+.drOctopus img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.drOctopus .drOctopus_glow {
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+
+.drOctopus:hover .drOctopus_glow{
+  opacity: 1;
+}
+
+
+
+/* electro */
+.electro_frame {
+  position: absolute;
+  right: 1057px;
+  top: 208px;
+}
+
+#section01 .hover5 {
+  position: absolute;
+  top: 13px;
+  left: 178px;
+}
+
+.electro {
+  position: relative;
+  width: 401px;
+  height: 257px;
+  cursor: pointer;
+
+}
+.electro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.electro .electro_glow {
+  mix-blend-mode: screen;
+  opacity: 0;
+}
+
+.electro:hover .electro_glow{
+  opacity: 0.7;
+}
+
+
+
+
+/* -----------팝업창 배경---------- */
+
+.charactertab_popUp {
+  /* display: none; */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: -1;
+  opacity: 0;
+}
+
+.charactertab_popUp.on {
+  opacity: 1;
+  z-index: 1000;
+}
+
+
+
+/* 팝업 헤더  */
+
+#header_2depth {
+  position: fixed;
+  top: 13px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1200;
+
+}
+
+#header_2depth .line_h {
+  position: absolute;
+  display: block;
+  top: 55px;
+  left: 0;
+  height: 1px;
+  width: 100vw;
+  background: #fff;
+  opacity: 0.22;
+}
+
+#logo_2depth {
+  margin-left: 190px;
+}
+
+#header_2depth nav {
+  position: absolute;
+  top: 50%;
+  right: 190px;
+  transform: translate(0, -50%);
+  margin-top: 15px;
+}
+
+#header_2depth nav > ul > li+li {
+  margin-left: 70px;
+}
+
+#header_2depth nav > ul {
+  display: flex;
+}
+
+#header_2depth nav ul li {
+  cursor: pointer;
+}
+#header_2depth nav ul li{
+  color: #c1c5d3;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.025;
+  cursor: pointer;
+}
+#header_2depth nav ul li:hover {
+  color: #fff;
+}
+
+#header_2depth nav ul li.active {
+  color: #fff;
+}
+#header_2depth nav ul li.active .nav_line {
+  width: 80%;
+}
+
+#header_2depth nav ul li .nav_line {
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #d1272f;
+  margin-top: 17px;
+  transition: 0.6s;
+}
+
+#header_2depth nav ul li:hover .nav_line {
+  width: 80%;
+}
+
+
+
+/* 창 닫기 버튼 */
+
+.toMain {
+  position: absolute;
+  top: 122px;
+  right: 114px;
+  z-index: 1200;
+}
+
+
+.toMain li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.toMain .toMain_exit_btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.toMain .btn_after {
+  opacity: 0;
+}
+
+.toMain li:hover .btn_after {
+  opacity: 1;
+}
+
+.toMain li:hover .btn_before{
+  opacity: 0;
+}
+
+
+
+/* ----------------------------------
+스파이더맨 팝업  */
+
+.spiderman_popUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../image/spiderman_popup_bg.png.jpg) center;
+  background-size: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+.spiderman_popUp.on {
+  opacity: 1;
+  z-index: 1100;
+}
+
+
+.spider_container {
+  position: absolute;
+  left: 216px;
+  top: 218px;
+}
+
+.spiderman_popUp .spider_container .kind {
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:0.7s;
+}
+.spiderman_popUp .spider_container .kind.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spiderman_popUp .spider_container .title {
+  margin: 37px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.2s;
+}
+.spiderman_popUp .spider_container .title.on {
+  transform: translateY(0);
+  opacity: 1.3;
+}
+
+.spiderman_popUp .spider_container .subtitle {
+  margin: 34px 0 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.5s;
+}
+.spiderman_popUp .spider_container .subtitle.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spiderman_popUp .spider_container .lineCon {
+
+  margin-top: 43px;
+  position: relative;
+  height: 5px;
+  width: 55vw;
+}
+
+.spiderman_popUp .spider_container .lineCon .line_c1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 55vw;
+  background: #fff;
+  opacity: 0.3;
+
+}
+
+.spiderman_popUp .spider_container .lineCon .line_c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 630px;
+  background: #d1272f;
+}
+
+
+.spider_container .content {
+  margin: 38px 0 0;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+.spider_container .content.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.spider_container .actor {
+  display: inline-block;
+  margin-top: 42px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.4s;
+}
+.spider_container .actor.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spider_container .movie {
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 170px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.8s;
+}
+.spider_container .movie.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.spider_container .toVillan {
+  margin:73px 0 0;
+}
+
+/* 스파이더맨 png  */
+
+.spiderman_popUp .png {
+  position: absolute;
+  bottom: 0;
+  right: 280px;
+}
+
+
+
+/* ----------------------------------
+닥터 스트레인지 팝업  */
+
+.drStrange_popUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../image/dr_strange_popup_bg.jpg) center;
+  background-size: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+.drStrange_popUp.on {
+  opacity: 1;
+  z-index: 1100;
+}
+
+
+.drStrange_container {
+  position: absolute;
+  left: 216px;
+  top: 170px;
+}
+
+.drStrange_container .kind {
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:0.7s;
+}
+.drStrange_container .kind.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drStrange_container .title {
+  margin: 37px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.2s;
+}
+.drStrange_container .title.on {
+  transform: translateY(0);
+  opacity: 1.3;
+}
+
+.drStrange_container .subtitle {
+  margin: 34px 0 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.5s;
+}
+.drStrange_container .subtitle.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drStrange_container .lineCon {
+  margin-top: 43px;
+  position: relative;
+  height: 5px;
+  width: 55vw;
+}
+
+.drStrange_container .lineCon .line_c1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 55vw;
+  background: #fff;
+  opacity: 0.3;
+
+}
+
+.drStrange_container .lineCon .line_c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 485px;
+  background: #d1272f;
+}
+
+
+.drStrange_container .content {
+  margin: 38px 0 0;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+.drStrange_container .content.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.drStrange_container .actor {
+  display: inline-block;
+  margin-top: 42px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.4s;
+}
+.drStrange_container .actor.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drStrange_container .movie {
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 170px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.8s;
+}
+.drStrange_container .movie.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drStrange_container .toVillan {
+  margin: 61px 0 0;
+}
+
+
+/* 닥터 스트레인지 png  */
+
+.drStrange_popUp .png {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+
+
+/* ----------------------------------
+그린고블린 팝업  */
+
+.greenGoblin_popUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../image/greengoblin_popup_bg.jpg) center;
+  background-size: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+.greenGoblin_popUp.on {
+  opacity: 1;
+  z-index: 1100;
+}
+
+.greenGoblin_container {
+  position: absolute;
+  left: 216px;
+  top: 218px;
+}
+
+.greenGoblin_container .kind {
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:0.7s;
+}
+.greenGoblin_container .kind.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.greenGoblin_container .title {
+  margin: 37px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.2s;
+}
+.greenGoblin_container .title.on {
+  transform: translateY(0);
+  opacity: 1.3;
+}
+
+.greenGoblin_container .subtitle {
+  margin: 34px 0 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.5s;
+}
+.greenGoblin_container .subtitle.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.greenGoblin_container .lineCon {
+  margin-top: 43px;
+  position: relative;
+  height: 5px;
+  width: 55vw;
+}
+
+.greenGoblin_container .lineCon .line_c1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 55vw;
+  background: #fff;
+  opacity: 0.3;
+
+}
+
+.greenGoblin_container .lineCon .line_c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 745px;
+  background: #d1272f;
+}
+
+
+.greenGoblin_container .content {
+  margin: 38px 0 0;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+.greenGoblin_container .content.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.greenGoblin_container .actor {
+  display: inline-block;
+  margin-top: 42px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.4s;
+}
+.greenGoblin_container .actor.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.greenGoblin_container .movie {
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 170px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.8s;
+}
+.greenGoblin_container .movie.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.greenGoblin_container .toHero {
+  margin: 106px 0 0;
+}
+
+
+/* 그린 고블린 png  */
+
+.greenGoblin_popUp .png {
+  position: absolute;
+  bottom: 0;
+  right: 58px;
+}
+
+
+
+/* ----------------------------------
+닥터 옥토퍼스 팝업  */
+
+.drOctopus_popUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../image/dr_octopus_popup_bg.jpg) center;
+  background-size: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+.drOctopus_popUp.on {
+  opacity: 1;
+  z-index: 1100;
+}
+
+
+.drOctopus_container {
+  position: absolute;
+  left: 216px;
+  top: 170px;
+}
+
+.drOctopus_container .kind {
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:0.7s;
+}
+.drOctopus_container .kind.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drOctopus_container .title {
+  margin: 37px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.2s;
+}
+.drOctopus_container .title.on {
+  transform: translateY(0);
+  opacity: 1.3;
+}
+
+.drOctopus_container .subtitle {
+  margin: 34px 0 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.5s;
+}
+.drOctopus_container .subtitle.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drOctopus_container .lineCon {
+  margin-top: 43px;
+  position: relative;
+  height: 5px;
+  width: 55vw;
+}
+
+.drOctopus_container .lineCon .line_c1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 55vw;
+  background: #fff;
+  opacity: 0.3;
+
+}
+
+.drOctopus_container .lineCon .line_c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 500px;
+  background: #d1272f;
+}
+
+
+.drOctopus_container .content {
+  margin: 38px 0 0;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+.drOctopus_container .content.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.drOctopus_container .actor {
+  display: inline-block;
+  margin-top: 42px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.4s;
+}
+.drOctopus_container .actor.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drOctopus_container .movie {
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 170px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.8s;
+}
+.drOctopus_container .movie.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.drOctopus_container .toHero {
+  margin: 62px 0 0;
+}
+
+
+/* 닥터 옥토퍼스 png  */
+
+.drOctopus_popUp .png {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+}
+
+
+
+/* ----------------------------------
+일렉트로 팝업  */
+
+.electro_popUp {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../image/electro_popup_bg.jpg) center;
+  background-size: cover;
+  opacity: 0;
+  z-index: -1;
+}
+
+.electro_popUp.on {
+  opacity: 1;
+  z-index: 1100;
+}
+
+
+.electro_container {
+  position: absolute;
+  left: 216px;
+  top: 218px;
+}
+
+.electro_container .kind {
+  margin: 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:0.7s;
+}
+.electro_container .kind.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.electro_container .title {
+  margin: 37px 0 0;
+  transform: translateY(30px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.2s;
+}
+.electro_container .title.on {
+  transform: translateY(0);
+  opacity: 1.3;
+}
+
+.electro_container .subtitle {
+  margin: 34px 0 0;
+  transform: translateY(20px);
+  opacity: 0;
+  transition:1s;
+  transition-delay: 0.5s;
+}
+.electro_container .subtitle.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.electro_container .lineCon {
+  margin-top: 43px;
+  position: relative;
+  height: 5px;
+  width: 55vw;
+}
+
+.electro_container .lineCon .line_c1 {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  height: 1px;
+  width: 55vw;
+  background: #fff;
+  opacity: 0.3;
+
+}
+
+.electro_container .lineCon .line_c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 5px;
+  width: 462px;
+  background: #d1272f;
+}
+
+
+.electro_container .content {
+  margin: 38px 0 0;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+.electro_container .content.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.electro_container .actor {
+  display: inline-block;
+  margin-top: 42px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.4s;
+}
+.electro_container .actor.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.electro_container .movie {
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 170px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 0.8s;
+  transition-delay: 1.8s;
+}
+.electro_container .movie.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.electro_container .toHero {
+  margin: 107px 0 0;
+}
+
+
+/* 일렉트로 png  */
+
+.electro_popUp .png {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+}
+
+
+
+
+
+/* 빌런으로 이동 버튼 */
+
+.toVillan li {
+  position: relative;
+  width: 204px;
+  height: 50px;
+  cursor: pointer;
+
+}
+.toVillan .toVillan_btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.toVillan_btn .btn_after {
+  opacity: 0;
+}
+
+.toVillan li:hover .btn_after {
+  opacity: 1;
+}
+
+.toVillan li:hover .btn_before{
+  opacity: 0;
+}
+
+
+/* 히어로로 이동 버튼 */
+
+.toHero li {
+  position: relative;
+  width: 204px;
+  height: 50px;
+  cursor: pointer;
+
+}
+.toHero .toHero_btn img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.toHero_btn .btn_after {
+  opacity: 0;
+}
+
+.toHero li:hover .btn_after {
+  opacity: 1;
+}
+
+.toHero li:hover .btn_before{
+  opacity: 0;
+}
+
+

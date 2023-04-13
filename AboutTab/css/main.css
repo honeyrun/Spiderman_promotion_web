@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+.swiper {
+  position: absolute;
+  left: 162px;
+  top: 240px;
+  width: 904px;
+  height: 510px;
+}
+
+
+.swiper-slide {
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .slid_txt {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  letter-spacing: 0.025;
+  color: #fff;
+}
+
+.swiper .play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev {
+  width: 45px;
+  height: 44px;
+  background: url('../image/vid_prev_btn.png');
+  transition: 0.6s;
+}
+.swiper-button-next {
+  width: 45px;
+  height: 44px;
+  background: url('../image/vid_next_btn.png');
+  transition: 0.6s;
+}
+.swiper-button-next:hover {
+  background: url('../image/vid_next_btn_h.png');
+}
+.swiper-button-prev:hover {
+  background: url('../image/vid_prev_btn_h.png');
+}
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  font-size: 0;
+}
+
+
+
+/* 헤더 영역 */
+
+#header {
+  position: fixed;
+  top: 26px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 990;
+}
+  
+#logo {
+    margin-left: 185px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+  nav > ul > li+li {
+    margin-left: 62px;
+  }
+  
+  nav > ul {
+    display: flex;
+  }
+  nav ul li a {
+    color: #c1c5d3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    letter-spacing: 0.01;
+  }
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  #header nav ul li.active a {
+    color: #fff;
+  }
+  #header nav ul li.active .nav_line {
+    width: 80%;
+  }
+  
+  #header nav ul li .nav_line {
+    display: block;
+    height: 2px;
+    width: 0;
+    background: red;
+    margin-top: 8px;
+    transition: 0.6s;
+  }
+  #header nav ul li:hover .nav_line {
+    width: 80%;
+  }
+  
+  #header .ticket {
+    margin-right: 189px;
+    cursor: pointer;
+  }
+  
+  
+  .header_bg {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    width: 100vw;
+    height: 177px;
+    background: url(../image/GNB/menu_dim_multiply.png) center;
+    background-size: cover;
+    z-index: 900;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+  
+  
+  /* .progressbar {
+  } */
+  
+  .progressbar .bar_line {
+    position: absolute;
+    top: 331px;
+    left: 1740px;
+    z-index: 910;
+  
+  }
+  
+  /* .progressbar .currentSlide {
+   
+  } */
+  
+  .progressbar .currentSlide .selectedSlide1 {
+    position: absolute;
+    top: 306px;
+    left: 1715px;
+    z-index: 910;
+    opacity: 0;
+    transition: 0.35s;
+  }
+
+  .progressbar .currentSlide .selectedSlide1.active {
+    opacity: 1;
+   }
+  
+  .progressbar .currentSlide .selectedSlide2 {
+    position: absolute;
+    top: 413px;
+    left: 1715px;
+    z-index: 910;
+    opacity: 0;
+    transition: 0.35s;
+  }
+  .progressbar .currentSlide .selectedSlide2.active {
+    opacity: 1;
+   }
+
+  .progressbar .currentSlide .selectedSlide3 {
+    position: absolute;
+    top: 520px;
+    left: 1715px;
+    z-index: 910;
+    opacity: 0;
+    transition: 0.35s;
+  }
+  .progressbar .currentSlide .selectedSlide3.active {
+    opacity: 1;
+   }
+  
+  .progressbar .currentSlide .selectedSlide4 {
+    position: absolute;
+    top: 627px;
+    left: 1715px;
+    z-index: 910;
+    opacity: 0;
+    transition: 0.35s;
+  }
+  .progressbar .currentSlide .selectedSlide4.active {
+    opacity: 1;
+   }
+  
+
+  
+.background_about {
+  width: 100vw;
+  height: 100vh;
+  background: url(../image/movieInfo_bg.jpg) center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/* section1 */
+
+/* #section01{
+
+} */
+  
+  #section01 .About {
+    position: absolute;
+    top: 152px;
+    left: 203px;
+    mix-blend-mode: soft-light;
+    transform: translate(0,30px);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  #section01 .About.on {
+    transform: translate(0,0);
+    opacity: 0.25;
+  }
+  
+  #section01 .MVtitle {
+    position: absolute;
+    top: 217px;
+    left: 206px;
+    transform: translate(0,20px);
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.35s;
+  }
+  #section01 .MVtitle.on {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  #section01 .MovieInfo {
+    position: absolute;
+    top: 415px;
+    left: 208px;
+    transform: translate(0,20px);
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 0.7s;
+  }
+  #section01 .MovieInfo.on {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  
+  #section01 .poster {
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+  }
+  
+  #section01 .poster .poster_shadow {
+    position: absolute;
+    top: 262px;
+    left: 1061px;
+    mix-blend-mode: multiply;
+  }
+  
+  #section01 .poster #tracking-area {
+    position: relative;
+       margin: 0;
+        width: 515px;
+        height: 747px;
+      
+    }
+    
+    #section01 .poster #transformation-area {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 515px;
+        height: 747px;
+        background-image: url('../image/poster.png');
+        background-size: cover;
+    }
+    #section01 .poster #transformation-area:hover{
+      opacity:0.95;
+    }
+  
+
+
+    
+/* section2 */
+
+#section02{
+  height: 980px;
+}
+
+
+#section02 .Synopsis {
+  position: absolute;
+  top: 152px;
+  left: 203px;
+  mix-blend-mode: soft-light;
+  transform: translate(0,30px);
+  opacity: 0;
+  transition: 1s;
+}
+
+#section02 .Synopsis.on {
+  transform: translate(0,0);
+  opacity: 0.25;
+}
+
+#section02 .MVtitle {
+  position: absolute;
+  top: 217px;
+  left: 206px;
+  transform: translate(0,20px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.35s;
+}
+#section02 .MVtitle.on {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+#section02 .MovieSynopsis {
+  position: absolute;
+  top: 408px;
+  left: 210px;
+  transform: translate(0,20px);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.7s;
+}
+#section02 .MovieSynopsis.on {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+
+/* 스파이더맨 png */
+
+#section02 .spiderman_frame .spiderman_png1 {
+  position: absolute;
+  top: 398px;
+  left: 757px;
+  transform: translate(0,-55px);
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section02 .spiderman_frame .spiderman_png1.on {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+
+#section02 .spiderman_frame .spiderman_shadow1 {
+  position: absolute;
+  top: 834px;
+  left: 729px;
+  mix-blend-mode: color-burn;
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section02 .spiderman_frame .spiderman_shadow1.on {
+  opacity: 1;
+}
+
+
+  
+/* watch now 버튼 */
+
+#section02 .watchNow_btn {
+  position: absolute;
+  top: 651px;
+  left: 211px;
+
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#section02 .watchNow_btn li {
+  position: relative;
+  width: 189px;
+  height: 50px;
+  cursor: pointer;
+
+}
+#section02 .watchNow_btn .btn_watchNow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#section02 .btn_watchNow .btn_after {
+  opacity: 0;
+}
+
+#section02 .watchNow_btn li:hover .btn_after{
+  opacity: 1;
+}
+
+#section02 .watchNow_btn li:hover .btn_before{
+  opacity: 0;
+}
+  
+
+.MovieSeries {
+  position: absolute;
+  top: 222px;
+  left: 1332px;
+}
+
+  
+.studio_info {
+  position: absolute;
+  top: 830px;
+  left: 213px;
+}
+
+  
+
+
+/* section3 */
+
+#section03 {
+    background: #000;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+#section03 .Gallery {
+  position: absolute;
+  top: 158px;
+  left: 157px;
+  transform: translate(0,30px);
+  opacity: 0;
+  transition: 0.8s;
+  
+}
+
+#section03 .Gallery.on {
+  transform: translate(0,0);
+  opacity: 0.7;
+}
+
+
+#section03 .imgSlide_container {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  scale: 0.8;
+  transform: rotate(-15deg);
+}
+
+#section03 .imgSlide_container ul li {
+  cursor: pointer;
+}
+
+#section03 .imgSlide_container ul li img {
+  width: 416px;
+  height: 259px;
+}
+
+#section03 .imgSlide_container .slide1 {
+  display: flex;
+  animation: flow_l 10s linear infinite;
+}
+
+#section03 .imgSlide_container .slide1 ul {
+  flex: 1;
+  width: 1920px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#section03 .imgSlide_container .slide2 {
+  display: flex;
+  animation: flow_r 10s linear infinite;
+}
+
+#section03 .imgSlide_container .slide2 ul {
+  flex: 1;
+  width: 1920px;
+  display: flex;
+  justify-content: space-around;
+  transform: translate(-1920px, 0);
+  margin-top: 54px;
+}
+
+
+
+/* 스파이더맨 png */
+
+#section03 .spiderman_frame .spiderman_png2 {
+  position: absolute;
+  top: 0;
+  left: 1453px;
+  transform: translate(70px,-50px);
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section03 .spiderman_frame .spiderman_png2.on {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+
+#section03 .spiderman_frame .spiderman_shadow2 {
+  position: absolute;
+  top: 0;
+  left: 1475px;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section03 .spiderman_frame .spiderman_shadow2.on {
+  opacity: 1;
+}
+
+
+
+/* section4 */
+
+#section04 {
+    background: #000;
+
+}
+
+
+#section04 .Videos {
+  position: absolute;
+  top: 160px;
+  left: 167px;
+  transform: translate(0,30px);
+  opacity: 0;
+  transition: 0.8s;
+  
+}
+
+#section04 .Videos.on {
+  transform: translate(0,0);
+  opacity: 0.7;
+}
+
+
+
+/* 스파이더맨 png */
+
+#section04 .spiderman_frame .spiderman_png3 {
+  position: absolute;
+  top: 0;
+  left: 1292px;
+  transform: translate(0,-55px);
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section04 .spiderman_frame .spiderman_png3.on {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+
+#section04 .spiderman_frame .spiderman_shadow3 {
+  position: absolute;
+  top: 0;
+  left: 1292px;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+#section04 .spiderman_frame .spiderman_shadow3.on {
+  opacity: 1;
+}
+
+
+ 
+/* watch now 버튼 */
+
+#section04 .MoreVid_btn {
+  position: absolute;
+  top: 818px;
+  left: 160px;
+
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#section04 .MoreVid_btn li {
+  position: relative;
+  width: 199px;
+  height: 50px;
+  cursor: pointer;
+
+}
+#section04 .MoreVid_btn .btn_MoreVid img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#section04 .btn_MoreVid .btn_after {
+  opacity: 0;
+}
+
+#section04 .MoreVid_btn li:hover .btn_after{
+  opacity: 1;
+}
+
+#section04 .MoreVid_btn li:hover .btn_before{
+  opacity: 0;
+}
+
+
+
+.sns {
+  position: absolute;
+  top: 872px;
+  left: 1548px;
+}
+
+.footer_txt {
+  position: absolute;
+  top: 866px;
+  left: 733px;
+}
+
+
+
+
+
+
+
+
+/* -----------팝업창---------- */
+
+.popUp {
+  /* display: none; */
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.popUp.on {
+  opacity: 1;
+  z-index: 100;
+}
+
+
+.popUp .bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 0.6;
+}
+
+.popUp .img_vid_frame {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.popUp_img .img_vid_frame img {
+  width: 1160px;
+  height: 725px;
+}
+
+.popUp_vid .img_vid_frame video {
+  width: 1280px;
+  height: 720px;
+}
+
+
+
+/* 창 닫기 버튼 */
+
+#section03 .popUp_img .toMain {
+  position: absolute;
+  top: 130px;
+  right: 285px;
+}
+
+#section04 .popUp_vid .toMain {
+  position: absolute;
+  top: 140px;
+  right: 225px;
+}
+.toMain {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: url('../image/btn_close.png');
+  transition: 1s;
+}
+.toMain:hover {
+  background: url('../image/btn_closeh.png');
+}
+
+
+
+
+
+
+
+@keyframes flow_l {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(-1920px,0);
+  }
+}
+
+
+@keyframes flow_r {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(1920px,0);
+  }
+}
